@@ -18,7 +18,7 @@ export const ProductCard = ({
   return (
     <article className={`h-full`}>
       <Link
-        href={`/product/${id}`}
+        href={`/producto/${id}`}
         className={`group flex h-full w-full flex-col overflow-hidden rounded-3xl border-2 border-foreground bg-background shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2`}
       >
         <div
