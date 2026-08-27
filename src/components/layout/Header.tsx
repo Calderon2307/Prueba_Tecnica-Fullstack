@@ -11,7 +11,7 @@ export const Header = () => {
           aria-label={"Ir a la página principal"}
           className={`rounded-sm font-heading text-2xl font-bold uppercase tracking-wide text-on-dark transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-on-dark sm:text-3xl`}
         >
-          Catálogo
+          Catalog
         </Link>
       </div>
     </header>

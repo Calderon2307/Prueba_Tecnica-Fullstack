@@ -27,7 +27,7 @@ export const generateMetadata = async ({
 
   if (productId === null) {
     return {
-      title: "Producto no encontrado",
+      title: "Product not found",
     };
   }
 
@@ -35,7 +35,7 @@ export const generateMetadata = async ({
 
   if (!product) {
     return {
-      title: "Producto no encontrado",
+      title: "Product not found",
     };
   }
 

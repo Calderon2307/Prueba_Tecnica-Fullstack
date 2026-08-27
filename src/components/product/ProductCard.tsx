@@ -1,16 +1,12 @@
 import { Product } from "@/types/product";
 import Link from "next/link";
 import Image from "next/image";
+import { formatCurrency } from "@/utils/formatCurrency";
 
 type ProductCardProps = Pick<
   Product,
   "id" | "image" | "title" | "price" | "category"
 >;
-
-const priceFormatter = Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-});
 
 export const ProductCard = ({
   id,
@@ -52,7 +48,7 @@ export const ProductCard = ({
           <p
             className={`mt-auto font-heading text-3xl font-semibold text-primary sm:text-4xl`}
           >
-            {priceFormatter.format(price)}
+            {formatCurrency(price)}
           </p>
         </div>
       </Link>

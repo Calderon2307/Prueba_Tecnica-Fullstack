@@ -15,7 +15,7 @@ export const ProductDetail = ({ product }: ProductDetailProps) => {
       className={`mx-auto grid w-full max-w-7xl gap-8 px-4 py-8 sm:px-6 sm:py-10 md:grid-cols-5 md:items-start lg:gap-12 lg:px-8`}
     >
       <div
-        className={`relative aspect-[4/5] w-full overflow-hidden rounded-2xl border-2 border-foreground bg-background md:col-span-2 md:aspect-[2/3]`}
+        className={`relative aspect-[4/5] w-full overflow-hidden rounded-2xl border-2 border-foreground bg-background md:col-span-2 md:aspect-[4/5]`}
       >
         <Image
           src={image}
@@ -48,7 +48,7 @@ export const ProductDetail = ({ product }: ProductDetailProps) => {
             id="product-description-title"
             className="font-heading text-xl font-semibold text-foreground sm:text-2xl"
           >
-            Descripción
+            Description
           </h2>
 
           <p className="mt-3 font-body text-base leading-relaxed text-foreground/80">

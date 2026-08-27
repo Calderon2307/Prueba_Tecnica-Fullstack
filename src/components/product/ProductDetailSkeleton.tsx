@@ -6,7 +6,7 @@ export const ProductDetailSkeleton = () => {
       aria-hidden="true"
       className="mx-auto grid w-full max-w-7xl animate-pulse gap-8 px-4 py-8 motion-reduce:animate-none sm:px-6 sm:py-10 md:grid-cols-5 md:items-start lg:gap-12 lg:px-8"
     >
-      <div className="aspect-[4/5] w-full rounded-2xl border-2 border-foreground bg-foreground/20 md:col-span-2 md:aspect-[2/3]" />
+      <div className="aspect-[4/5] w-full rounded-2xl border-2 border-foreground bg-foreground/20 md:col-span-2 md:aspect-[4/5]" />
 
       <div className="flex flex-col md:col-span-3 md:pt-2">
         <div className="h-7 w-28 rounded-full bg-foreground/20" />
