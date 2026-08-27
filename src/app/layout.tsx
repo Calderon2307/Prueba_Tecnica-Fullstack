@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "@styles/globals.css";
+import { Header } from "@components/layout/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: {
     default: "Catalogo de Productos",
-    template: "%s | Catalogo de Productos"
+    template: "%s | Catalogo de Productos",
   },
   description:
     "Explora productos, consulta sus características y filtra el catálogo por nombre o categoría.",
@@ -31,7 +32,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-screen bg-background font-body text-foreground antialiased">{children}</body>
+      <body className="min-h-screen bg-background font-body text-foreground antialiased">
+        <Header />
+        <main className={`flex-1`}>{children}</main>
+      </body>
     </html>
   );
 }
