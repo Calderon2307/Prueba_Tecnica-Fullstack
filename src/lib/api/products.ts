@@ -19,6 +19,10 @@ export const getProducts = async (): Promise<Product[]> => {
 export const getProductById = async (id: number): Promise<Product | null> => {
   const response = await fetch(`${FAKE_STORE_API_URL}/products/${id}`);
 
+  if (response.status === 404) {
+    return null;
+  }
+
   if (!response.ok) {
     throw new Error(`Error HTTP al obtener el producto: ${response.status}`);
   }
